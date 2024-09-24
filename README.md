@@ -1,4 +1,4 @@
-El DISEÑO API SPACE-MIX
+El DISEÑO API SPACE-MIX🚀
 
 MIX de código abierto para datos de lanzamiento, cohetes, núcleos, cápsulas, enlaces estelares, plataformas de lanzamiento y plataformas de aterrizaje.
 
@@ -34,4 +34,4 @@ Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios
 
 
 **Jaider adrián Pérez vega**
-**Jeisson stiven pérez gonzalez**
+**Jeisson stiven pérez gonzalez**🚀🚀..
