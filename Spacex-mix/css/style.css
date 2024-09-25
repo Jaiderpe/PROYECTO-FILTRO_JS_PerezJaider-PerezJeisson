@@ -228,28 +228,17 @@ body {
 .table__container__1 div strong{
     color: var(--color--five);
 }
-.section__image {
-    /* background: orange; */
+
+.coete {
     grid-area: colum__2;
     display: flex;
     overflow-x: auto;
     align-items: center;
+    transform-style: preserve-3d; 
+    transition: transform 0.5s ease; 
 }
 
-.section__image>.carousel__item {
-    /* background: violet; */
-    text-align: center;
-    margin: 0 10px;
 
-}
-
-.section__image>.carousel__item img {
-    width: 305px;
-    height: 190px;
-    border-radius: 10px;
-    object-fit: cover;
-    box-shadow: 0px 0px 10px var(--color--one);
-}
 
 .section__information__3 {
     /* background: violet; */
