@@ -34,4 +34,20 @@ capsules.addEventListener("click", async(e)=>{
 })
 
 
+let Historia = document.querySelector("#Historia")
+Historia.addEventListener("click", async(e)=>{
+    await footerSelect(e, Historia)
+    let paginacion = document.querySelector("#paginacion");
+    paginacion.innerHTML = ""
+    paginacion.append(await paginationHistoria())
+})
+
+let Empresa = document.querySelector("#Empresa")
+Empresa.addEventListener("click", async(e)=>{
+    await footerSelect(e, Empresa)
+    let paginacion = document.querySelector("#paginacion");
+    paginacion.innerHTML = ""
+    paginacion.append(await paginationEmpresa())
+})
+
 capsules.click();

@@ -166,6 +166,7 @@ export const paginationRockets = async()=>{
     return div;
 }
 
+
 const getCapsulesId = async(e)=>{
     e.preventDefault();
     if(e.target.dataset.page){
@@ -187,45 +188,23 @@ const getCapsulesId = async(e)=>{
     
 }
 
-export const paginationCapsules = async(page=1, limit=4)=>{  
-     
-    let {docs, pagingCounter, totalPages, nextPage} = await getAllCapsules(page, limit)
-
+export const paginationCapsules = async()=>{
+    let rockets = await getAllRockets();
     let div = document.createElement("div");
     div.classList.add("buttom__paginacion")
-
-    
-    let start = document.createElement("a");
-    start.setAttribute("href","#");
-    start.innerHTML = "&laquo";
-    start.setAttribute("data-page", (page==1) ? totalPages : page-1)
-    start.addEventListener("click", getCapsulesId)
-    div.appendChild(start);
-    docs.forEach((val,id) => {
+  
+    rockets.forEach((val,id) => {
         let a = document.createElement("a");
         a.setAttribute("href","#");
         a.id = val.id;
-        a.textContent = pagingCounter;
-        a.addEventListener("click", getCapsulesId)
+        a.textContent = id+1;
+        a.addEventListener("click", getRocketsId)
         div.appendChild(a);
-        pagingCounter++
     });
-    let end = document.createElement("a");
-    end.setAttribute("href","#");
-    end.innerHTML = "&raquo;";
-    end.setAttribute("data-page", (page && nextPage) ? page+1 : 1)
-    end.addEventListener("click", getCapsulesId)
-    div.appendChild(end);
-    console.log(div);
-    let [back, a1,a2,a3,a4, next] = div.children
-    a1.click();
-    // <div class="buttom__paginacion">
-    //     <a href="#">&laquo;</a> 
-    //     <a href="#" class="activo">1</a>
-    //     <a href="#">2</a>
-    //     <a href="#">3</a>
-    //     <a href="#">4</a>
-    //     <a href="#">&raquo;</a>
-    // </div>
+    
+    let [a1,a2,a3,a4] = div.children
+    a3.click();
+    
+    
     return div;
 }
