@@ -1,0 +1,156 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color:#121528;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: url(./imagenes2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  /* Título principal */
+  h1 {
+    font-size: 2.5rem;
+    color: #c8dfe0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Contenedor de cápsulas */
+  #capsules-container {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que las cajas se envuelvan a la siguiente línea */
+    justify-content: space-between; /* Espaciado entre columnas */
+  }
+  
+  /* Estilo de las cápsulas (tarjetas) */
+  .capsule {
+    background-color: #151a30;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px; /* Espacio entre tarjetas */
+    width: calc(30% - 20px); /* Ajustar el ancho para 3 columnas */
+    box-shadow: 0 10px 15px #1cc7d0;
+    transition: transform 0.3s ease;
+  }
+  
+  .capsule:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px #1cc7d0;
+  }
+  
+  .capsule h2 {
+    font-size: 1.8rem;
+    color: #1cc7d0;
+    margin-bottom: 10px;
+  }
+  
+  .capsule p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 8px 0;
+    line-height: 1.5;
+  }
+  
+  /* Responsivo para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .capsule {
+      width: calc(45% - 20px); /* Ajustar el ancho para 2 columnas */
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .capsule h2 {
+      font-size: 1.5rem;
+    }
+  
+    .capsule p {
+      font-size: 0.9rem;
+    }
+  
+    .capsule {
+      width: 100%; /* Ajustar a 1 columna */
+    }
+  }
+  
+  /* Agregar estilos para los botones de navegación */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.nav-button {
+    background-color: #1cc7d0;
+    color: #fff;
+    border: none;
+    border-radius: 5px #1cc7d0;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #1cc7d0; /* Color más oscuro al pasar el mouse */
+}
+
+.nav-button:disabled {
+    background-color: #7d7d7d; /* Color para el botón deshabilitado */
+    cursor: not-allowed;
+}
+.footer {
+    background-color:#151a30;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0; /* Espacio alrededor del footer */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px #1cc7d0; /* Sombra sutil */
+}
+.footer-buttons {
+    display: flex; /* Para alinear los botones en una fila */
+    justify-content: center; /* Centrar los botones horizontalmente */
+    margin-top: 10px; /* Espacio encima de los botones */
+}
+
+.footer-button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espaciado interno */
+    margin: 0 5px; /* Espaciado entre los botones */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero al pasar el ratón */
+    transition: background-color 0.3s; /* Efecto de transición al cambiar de color */
+}
+
+.footer-button:hover {
+    background-color: #0056b3; /* Color al pasar el ratón */
+}
