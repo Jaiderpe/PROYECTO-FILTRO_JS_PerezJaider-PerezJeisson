@@ -18,7 +18,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     <li><a href="${data.links.twitter}" target="_blank">Twitter</a></li>
                     <li><a href="${data.links.elon_twitter}" target="_blank">Twitter de Elon Musk</a></li>
                 </ul>
-            `;
+            `
+            ;
         })
         .catch(error => {
             console.error('Error al obtener los datos:', error);
