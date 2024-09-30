@@ -17,6 +17,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 
 .event {
@@ -28,11 +29,14 @@ h1 {
     flex: 1 1 calc(33.333% - 20px);
     box-sizing: border-box;
     transition: transform 0.2s, box-shadow 0.2s; /* Efecto de transición */
+    box-shadow: 0 10px 15px #1cc7d0;
 }
 
 .event:hover {
     transform: translateY(-5px); /* Efecto de levantamiento al pasar el ratón */
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el ratón */
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px #1cc7d0;
 }
 
 .event h2 {
@@ -64,6 +68,13 @@ h1 {
 .pagination {
     text-align: center;
     margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 .pagination button {
