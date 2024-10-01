@@ -18,6 +18,7 @@ body {
   background-color: var(--main-bg-color);
   color: var(--text-color);
   width: 100%;
+ 
   
 }
 
@@ -171,20 +172,20 @@ main {
     box-shadow: 0 2px 5px #1cc7d0; /* Sombra sutil */
 }
 .footer-buttons {
-    display: flex; /* Para alinear los botones en una fila */
-    justify-content: center; /* Centrar los botones horizontalmente */
-    margin-top: 10px; /* Espacio encima de los botones */
+    display: flex; 
+    justify-content: center; 
+    margin-top: 10px; 
 }
 
 .footer-button {
-    background-color: #007bff; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    border: none; /* Sin borde */
-    padding: 10px 15px; /* Espaciado interno */
-    margin: 0 5px; /* Espaciado entre los botones */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cursor de puntero al pasar el ratón */
-    transition: background-color 0.3s; /* Efecto de transición al cambiar de color */
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    margin: 0 5px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
 }
 
 .footer-button:hover {
