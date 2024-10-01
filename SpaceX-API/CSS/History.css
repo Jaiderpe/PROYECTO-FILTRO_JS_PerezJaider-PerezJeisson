@@ -1,7 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
     min-height: 100vh;
-    margin: 0;
     padding: 20px;
     background-image: url(../IMG/images4.jpeg);
 }
@@ -106,6 +105,8 @@ h1 {
     margin: 20px 0; /* Espacio alrededor del footer */
     border-radius: 5px; /* Bordes redondeados */
     box-shadow: 0 2px 5px #1cc7d0; /* Sombra sutil */
+    position: sticky;
+    top: 20px;
 }
 .footer-buttons {
     display: flex; /* Para alinear los botones en una fila */
