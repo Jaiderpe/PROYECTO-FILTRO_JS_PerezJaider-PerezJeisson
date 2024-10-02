@@ -53,7 +53,7 @@ main {
 /* Grid para los cohetes */
 #rocket-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+  grid-template-columns: repeat(3, ); /* Tres columnas */
   gap: 10px;
 }
 
