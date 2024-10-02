@@ -8,7 +8,6 @@
   --card-bg-color: #151a30;
   --card-border-color: #1cc7d0;
   --header-color: #121528;
-
 }
 
 body {
@@ -18,8 +17,6 @@ body {
   background-color: var(--main-bg-color);
   color: var(--text-color);
   width: 100%;
- 
-  
 }
 
 /* Estilo del encabezado */
@@ -29,7 +26,6 @@ header {
   text-align: center;
   padding: 2em 0;
   border-bottom: 4px solid var(--accent-color);
-  
 }
 
 h1 {
@@ -46,7 +42,6 @@ main {
 
 /* Estilo del contenedor de cohetes */
 #rockets {
-    
   background-color: var(--header-color);
   padding: 30px;
   border-radius: 8px;
@@ -58,9 +53,8 @@ main {
 /* Grid para los cohetes */
 #rocket-list {
   display: grid;
-  grid-template-columns: repeat(3, fr); /* Tres columnas */
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
   gap: 10px;
-  
 }
 
 /* Estilo de las tarjetas de cohetes */
@@ -97,98 +91,127 @@ main {
     grid-template-columns: 1fr; /* Solo una columna en pantallas pequeñas */
   }
 }
+
 /* Botones de navegación */
 .navigation-buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  .navigation-buttons button {
-    background-color: var(--accent-color);
-    color: var(--text-color);
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 0 10px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .navigation-buttons button:hover {
-    background-color: #0fa7b5;
-  }
-  
-  .navigation-buttons button:disabled {
-    background-color: grey;
-    cursor: not-allowed;
-  }
-  /* Contenedor para la información y la imagen */
-#rocket-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    margin-top: 20px;
-  }
-  
-  /* Estilo para el contenedor de la imagen */
-  #rocket-image {
-    flex: 1;
-    max-width: 45%; /* Ajustar el tamaño de la imagen */
-    text-align: center;
-  }
-  
-  #rocket-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  }
-  
-  /* Contenedor de la información */
-  #rocket-list {
-    flex: 1;
-  }
-  
-  /* Ajuste de los contenedores para pantallas pequeñas */
-  @media (max-width: 768px) {
-    #rocket-container {
-      flex-direction: column;
-    }
-  
-    #rocket-image {
-      max-width: 100%;
-    }
-  }
-  .footer {
-    background-color:#151a30;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin: 20px 0; /* Espacio alrededor del footer */
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 2px 5px #1cc7d0; /* Sombra sutil */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
+
+.navigation-buttons button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+.navigation-buttons button:hover {
+  background-color: #0fa7b5;
+}
+
+.navigation-buttons button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+/* Contenedor para la información y la imagen */
+#rocket-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Estilo para el contenedor de la imagen */
+#rocket-image {
+  flex: 1;
+  max-width: 45%; /* Ajustar el tamaño de la imagen */
+  text-align: center;
+}
+
+#rocket-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Contenedor de la información */
+#rocket-list {
+  flex: 1;
+}
+
+/* Ajuste de los contenedores para pantallas pequeñas */
+@media (max-width: 768px) {
+  #rocket-container {
+    flex-direction: column;
+  }
+
+  #rocket-image {
+    max-width: 100%;
+  }
+}
+
+/* Estilo del pie de página */
+.footer {
+  background-color: #151a30;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0; /* Espacio alrededor del footer */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px #1cc7d0; /* Sombra sutil */
+}
+
 .footer-buttons {
-    display: flex; 
-    justify-content: center; 
-    margin-top: 10px; 
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .footer-button {
-    background-color: #007bff; 
-    color: white; 
-    border: none; 
-    padding: 10px 15px; 
-    margin: 0 5px; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    transition: background-color 0.3s; 
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .footer-button:hover {
-    background-color: #0056b3; /* Color al pasar el ratón */
+  background-color: #0056b3; /* Color al pasar el ratón */
 }
-  
+
+/* Estilos responsivos adicionales para pantallas más pequeñas */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .navigation-buttons button {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+
+  .rocket-item h3 {
+    font-size: 1.2em;
+  }
+
+  .rocket-item p {
+    font-size: 0.8em;
+  }
+
+  .footer-button {
+    padding: 8px 10px;
+    font-size: 0.9em;
+  }
+}
