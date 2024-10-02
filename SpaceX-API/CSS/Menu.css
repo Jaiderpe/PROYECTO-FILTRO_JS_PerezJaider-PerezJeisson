@@ -68,7 +68,6 @@ p {
     color: white;
 }
 
-/* Estilo para el nuevo botón */
 .button {
     background-color: #00aaff; /* Color del botón */
     color: white;              /* Color del texto */
@@ -83,6 +82,7 @@ p {
     height: auto;
     border-radius: 15px;
 }
+
 .image {
     position: relative;
     overflow: hidden;
@@ -104,5 +104,56 @@ p {
     }
     100% {
         transform: translateY(0) scale(1); /* Volver a la posición inicial */
+    }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .content {
+        margin-right: 0;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .image img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    .button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .image img {
+        max-width: 80%;
     }
 }
